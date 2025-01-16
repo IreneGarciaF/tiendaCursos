@@ -11,4 +11,5 @@ export default defineConfig({
   define: {
     'process.env': {}, // Define `process.env` para compatibilidad
   },
+  base: '/tiendaCursos/', // Reemplaza "mi-proyecto" con el nombre de tu repositorio
 });
