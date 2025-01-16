@@ -1,0 +1,16 @@
+.main-footer {
+  background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.main-footer p {
+  margin: 0;
+  color: #43cea2;
+}

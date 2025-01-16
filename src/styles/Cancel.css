@@ -1,0 +1,28 @@
+.cancel-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .cancel-container h1 {
+    color: #ff7e5f;
+    font-size: 2.5rem;
+  }
+  
+  .cancel-container p {
+    margin: 20px 0;
+  }
+  
+  .cancel-container .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #185a9d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-container .button:hover {
+    background-color: #43cea2;
+  }
+  

@@ -1,0 +1,84 @@
+.registro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 105px);
+  width: 100%;
+  background: linear-gradient(120deg, #43cea2, #185a9d);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.registro-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f2fcfe;
+}
+
+.registro-container form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.registro-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.registro-container form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #185a9d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registro-container form input:focus {
+  outline: none;
+  border: 1px solid #43cea2;
+}
+
+.registro-container button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #185a9d, #43cea2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.registro-container button:hover {
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.registro-container p {
+  margin-top: 20px;
+  color: #f2fcfe;
+}
+
+
+/* Para el icono de confirmar contraseña*/
+/* para las notas del formulario*/
+/* Registro.css */
+/* Registro.css */
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+.hide {
+  display: none;
+}

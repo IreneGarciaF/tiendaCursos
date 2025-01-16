@@ -1,0 +1,110 @@
+/*Cursos*/
+.cursos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 105px);
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: white;
+}
+
+.cursos-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cursos-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 30px; /* Más espacio entre tarjetas */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%; /* Ocupa casi todo el ancho */
+  max-width: 1400px; /* Limitar ancho máximo */
+}
+
+.curso-card {
+  position: relative; /* Posicionamiento para overlay */
+  background-size: cover; /* Imagen ocupa todo el fondo */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar repeticiones */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+  padding: 20px;
+  text-align: center; /* Centrar texto */
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 400px; /* Altura aumentada */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Alinear contenido al fondo */
+  overflow: hidden; /* Evitar desbordamiento */
+  color: white; /* Texto blanco */
+}
+
+.curso-card::before {
+  content: ""; /* Crear el overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay semi-transparente */
+  z-index: 1; /* Debajo del contenido */
+}
+
+.curso-card h2,
+.curso-card p,
+.curso-card .precio,
+.curso-card button {
+  position: relative; /* Por encima del overlay */
+  z-index: 2;
+}
+
+.curso-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffffff; /* Blanco puro */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para legibilidad */
+}
+
+.curso-card p {
+  color: rgba(255, 255, 255, 0.9); /* Blanco con opacidad */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra para legibilidad */
+}
+
+.curso-card .precio {
+  font-size: 1.6rem; /* Más grande para destacar */
+  font-weight: bold;
+  color: #ffdd57; /* Amarillo vibrante */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Más sombra para resaltar */
+}
+
+.curso-card button {
+  background-color: #007bff; /* Azul vibrante */
+  color: #ffffff; /* Blanco puro */
+  border: none;
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 12px 25px; /* Botón más grande */
+  font-size: 1.1rem; /* Texto más grande */
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.curso-card button:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+  transform: translateY(-3px); /* Elevar botón */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Brillo en hover */
+}
+
+.curso-card:hover {
+  transform: scale(1.08); /* Agrandar tarjeta */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}

@@ -1,0 +1,23 @@
+.video-container {
+    flex: 1; 
+    margin-right: 20px; 
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f1f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.ReactVideo {
+    width: 70vh;
+    height: 40vh;
+}
+
+.video-container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+    color: #185a9d;
+}

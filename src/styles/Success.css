@@ -1,0 +1,72 @@
+/* Success Page Container */
+.seccion-success {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f7f7f7;
+}
+
+/* Success Header */
+.compra-container h1 {
+  font-size: 2.5rem;
+  color: #203a43;
+  margin-bottom: 20px;
+}
+
+.compra-container h5,
+.compra-container h6 {
+  font-size: 1.5rem;
+  color: #185a9d;
+}
+
+.compra-container p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #0f2027;
+}
+
+/* Button Styles */
+.success-btn {
+  background-color: #43cea2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success-btn:hover {
+  background-color: #2c5364;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Error Message Styling */
+.compra-container p[style*="color: red"] {
+  font-size: 1rem;
+  color: red;
+  margin-top: 20px;
+}
+
+/* Section Spacing */
+.compra-container {
+  margin-top: 40px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .compra-container h1 {
+    font-size: 2rem;
+  }
+
+  .compra-container h5,
+  .compra-container h6 {
+    font-size: 1.2rem;
+  }
+
+  .success-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

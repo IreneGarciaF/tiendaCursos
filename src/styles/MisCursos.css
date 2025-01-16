@@ -1,0 +1,91 @@
+/* Mis Cursos */
+.mis-cursos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 105px);
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: white;
+}
+
+.mis-cursos-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mis-cursos-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 1400px;
+}
+
+.Micurso-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 40%;
+  height: 500px; /* Ajusta la altura según lo necesites */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  color: white;
+  /* Asegúrate de tener estos valores para mostrar la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.curso-card-overlay {
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté sobre el overlay */
+  background: rgba(0, 0, 0, 0.6); /* Overlay semi-transparente */
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.curso-card h2 {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.curso-card p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.curso-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.micurso-btn {
+  background-color: #007bff; /* Azul vibrante */
+  color: #ffffff; /* Blanco puro */
+  border: none;
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 12px 25px; /* Botón más grande */
+  font-size: 1.1rem; /* Texto más grande */
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.micurso-btn:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+  transform: translateY(-3px); /* Elevar botón */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Brillo en hover */
+}
