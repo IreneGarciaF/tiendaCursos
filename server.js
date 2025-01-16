@@ -7,14 +7,24 @@ import firebaseAdmin from "firebase-admin";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Aquí ya importas correctamente firebase-admin
-import serviceAccount from "./keys/tienda-digital-devshop-firebase-adminsdk-ign8n-143437853e.json" assert { type: "json" };
+dotenv.config();
 
 // Cargar la clave del servicio de Firebase usando la sintaxis de import
 const __filename = fileURLToPath(import.meta.url); 
 const __dirname = path.dirname(__filename); 
+const serviceAccount = {
+  type: "service_account",
+  project_id: process.env.FIREBASE_PROJECT_ID,
+  private_key_id: process.env.FIREBASE_PRIVATE_KEY_ID,
+  private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),  // Asegúrate de que el salto de línea sea correcto
+  client_email: process.env.FIREBASE_CLIENT_EMAIL,
+  client_id: process.env.FIREBASE_CLIENT_ID,
+  auth_uri: process.env.FIREBASE_AUTH_URI,
+  token_uri: process.env.FIREBASE_TOKEN_URI,
+  auth_provider_x509_cert_url: process.env.FIREBASE_AUTH_PROVIDER_X509_CERT_URL,
+  client_x509_cert_url: process.env.FIREBASE_CLIENT_X509_CERT_URL,
+};
 
-dotenv.config();
 
 // Inicializar Firebase Admin SDK
 firebaseAdmin.initializeApp({
